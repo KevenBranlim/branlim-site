@@ -13,7 +13,7 @@ Site estático: HTML + CSS + JavaScript puro. Sem framework, sem build, sem depe
 ├── assets/
 │   ├── css/style.css       # Estilos (variáveis de cor em :root)
 │   ├── js/main.js          # CONFIG + comportamentos
-│   └── img/logo.svg        # Logo vetorial
+│   └── img/logo.svg        # Logo vetorial (logo.png: versão transparente)
 ├── .nojekyll               # Desliga o Jekyll no GitHub Pages
 └── README.md
 ```
