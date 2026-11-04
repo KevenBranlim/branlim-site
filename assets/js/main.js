@@ -66,6 +66,7 @@ const CONFIG = {
       el.src = e.src + (e.type === 'iframe' && e.src.includes('youtube') ? '&playsinline=1' : '');
       if (e.type === 'iframe') { el.allow = 'autoplay; fullscreen; picture-in-picture; encrypted-media'; el.allowFullscreen = true; el.title = card.getAttribute('aria-label') || 'Vídeo'; }
       else { el.controls = true; el.autoplay = true; el.playsInline = true; }
+      lb.classList.toggle('lightbox--vertical', card.hasAttribute('data-vertical'));
       lbFrame.appendChild(el);
       lb.showModal();
     });
