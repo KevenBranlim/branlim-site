@@ -51,6 +51,26 @@ const CONFIG = {
     player.appendChild(el);
   });
 
+  // Trabalhos: vídeo abre na janela por cima do site
+  const lb = $('#lightbox'), lbFrame = $('#lightbox-frame');
+  function closeLightbox(){ if (lb.open) lb.close(); }
+  lb.addEventListener('close', () => { lbFrame.innerHTML = ''; });          // para o vídeo ao fechar
+  lb.addEventListener('click', e => { if (e.target === lb) closeLightbox(); }); // clique fora fecha
+  lb.querySelector('.lightbox__close').addEventListener('click', closeLightbox);
+  document.querySelectorAll('[data-video]').forEach(card => {
+    card.addEventListener('click', ev => {
+      if (typeof lb.showModal !== 'function') return; // navegador antigo: segue o link
+      ev.preventDefault();
+      const e = embedUrl(card.dataset.video);
+      const el = document.createElement(e.type);
+      el.src = e.src + (e.type === 'iframe' && e.src.includes('youtube') ? '&playsinline=1' : '');
+      if (e.type === 'iframe') { el.allow = 'autoplay; fullscreen; picture-in-picture; encrypted-media'; el.allowFullscreen = true; el.title = card.getAttribute('aria-label') || 'Vídeo'; }
+      else { el.controls = true; el.autoplay = true; el.playsInline = true; }
+      lbFrame.appendChild(el);
+      lb.showModal();
+    });
+  });
+
   // Máscara simples para o telefone
   $('#f-whats').addEventListener('input', e => {
     const d = e.target.value.replace(/\D/g, '').slice(0, 11);

@@ -90,9 +90,10 @@
 </section>
 
 <!-- TRABALHOS
-     Para cada trabalho: troque o título, a categoria, o link (href) e,
-     se quiser, coloque um frame real dentro de .work__frame:
-     <img src="frames/projeto1.jpg" alt="Frame do filme X" loading="lazy">  -->
+     Trabalho com vídeo: copie o card BRL_01 e troque o ID do YouTube
+     (os 11 caracteres depois de youtu.be/) no href, no data-video e na capa
+     (i.ytimg.com/vi/ID/maxresdefault.jpg), além do título e da categoria.
+     Ao clicar, o vídeo abre na janela #lightbox. Sem JavaScript, abre no YouTube.  -->
 <section id="trabalhos" class="works" aria-labelledby="t-trabalhos">
   <div class="wrap">
     <div class="sec-head">
@@ -100,7 +101,14 @@
       <a class="works__more mono" href="#contato">Quero o meu aqui →</a>
     </div>
     <div class="grid">
-      <a class="work" href="#trabalhos"><div class="work__frame" style="background:linear-gradient(160deg,#070B1F 0%,#1450C8 100%)"><span class="work__tag work__tag--tl">BRL_01</span></div><div class="work__info"><span class="work__title">[Cliente] — [Projeto]</span><span class="work__cat mono">Publicidade</span></div></a>
+      <a class="work" href="https://youtu.be/P6vm5vVWFes" data-video="https://youtu.be/P6vm5vVWFes" target="_blank" rel="noopener" aria-label="Assistir: Jhenyfer Morais — Fashion Film">
+        <div class="work__frame">
+          <img src="https://i.ytimg.com/vi/P6vm5vVWFes/maxresdefault.jpg" alt="Frame do fashion film de Jhenyfer Morais" width="1280" height="720" loading="lazy">
+          <span class="work__play" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 40 40"><path d="M11 5 L35 20 L11 35 Z" fill="#ECEBE6"/></svg></span>
+          <span class="work__tag work__tag--tl">BRL_01</span>
+        </div>
+        <div class="work__info"><span class="work__title">Jhenyfer Morais — Fashion Film</span><span class="work__cat mono">Redes</span></div>
+      </a>
       <a class="work" href="#trabalhos"><div class="work__frame" style="background:linear-gradient(200deg,#1450C8 0%,#4A9BE8 70%,#DCE8F7 100%)"><span class="work__tag work__tag--tl">BRL_02</span></div><div class="work__info"><span class="work__title">[Cliente] — [Projeto]</span><span class="work__cat mono">Institucional</span></div></a>
       <a class="work" href="#trabalhos"><div class="work__frame" style="background:linear-gradient(120deg,#0B1230 0%,#4A9BE8 100%)"><span class="work__tag work__tag--tl">BRL_03</span></div><div class="work__info"><span class="work__title">[Cliente] — [Projeto]</span><span class="work__cat mono">Evento</span></div></a>
       <a class="work" href="#trabalhos"><div class="work__frame" style="background:linear-gradient(180deg,#4A9BE8 0%,#070B1F 100%)"><span class="work__tag work__tag--tl">BRL_04</span></div><div class="work__info"><span class="work__title">[Cliente] — [Projeto]</span><span class="work__cat mono">Redes</span></div></a>
@@ -163,6 +171,12 @@
     </div>
   </div>
 </footer>
+
+<!-- Janela de vídeo dos trabalhos -->
+<dialog class="lightbox" id="lightbox" aria-label="Vídeo">
+  <button class="lightbox__close" type="button" aria-label="Fechar vídeo">✕</button>
+  <div class="lightbox__frame" id="lightbox-frame"></div>
+</dialog>
 
 <script src="assets/js/main.js" defer></script>
 </body>
