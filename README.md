@@ -35,6 +35,12 @@ Depois abra http://localhost:8000. Também funciona abrindo o `index.html` diret
 Envie a pasta inteira para a raiz do host (ex.: `public_html/`), mantendo a estrutura de `assets/`.
 No GitHub Pages está publicado a partir da branch `main`, pasta `/ (root)`.
 
+## Cache
+
+O `index.html` carrega `style.css` e `main.js` com `?v=AAAAMMDDNN`.
+Ao alterar CSS ou JS, aumente esse número nas duas linhas para que os
+visitantes recebam a versão nova na hora, sem ficar com a antiga guardada.
+
 ## Configuração (`assets/js/main.js`)
 
 | Chave           | Uso                                                                 |
