@@ -1,7 +1,7 @@
 # BRANLIM Films — site
 
 Landing page da BRANLIM Films, produtora audiovisual em Estreito/MA.
-*Histórias que o tempo não apaga.*
+*Transformo sua história em algo que o tempo não apaga.*
 
 Site estático: HTML + CSS + JavaScript puro. Sem framework, sem build, sem dependências.
 
