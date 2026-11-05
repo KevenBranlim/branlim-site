@@ -107,6 +107,7 @@ a{color:var(--ceu)} a:hover{color:var(--gelo)}
 .work__play svg{margin-left:4px}
 .work:hover .work__play{transform:scale(1.1);background:var(--accent)}
 .work__tag{z-index:1;position:absolute;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--papel)}
+.work__tag--tl{display:none} /* códigos BRL_01…BRL_06 escondidos; apague esta regra para mostrar de novo */
 .work__tag--tl{left:14px;top:12px} .work__tag--br{right:14px;bottom:12px}
 .work__info{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-top:1px solid rgba(220,232,247,.18);padding-top:14px}
 .work__title{font-size:1.25rem;font-weight:700}
