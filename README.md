@@ -46,7 +46,7 @@ visitantes recebam a versão nova na hora, sem ficar com a antiga guardada.
 | Chave           | Uso                                                                 |
 |-----------------|---------------------------------------------------------------------|
 | `cidade`        | Texto do eyebrow do hero                                            |
-| `duracao`       | Duração exibida no cabeçalho do showreel                            |
+| `duracao`       | Duração no cabeçalho do showreel; vazio esconde (ex.: `"01:30"`)    |
 | `whatsapp`      | Número só com dígitos (DDI+DDD), usado em `wa.me`                   |
 | `whatsappTexto` | Número formatado exibido na página                                  |
 | `email`         | `mailto:` e fallback do formulário                                  |
@@ -60,7 +60,7 @@ Os mesmos valores também estão escritos no HTML como fallback sem JavaScript.
 ## Comportamentos (`main.js`)
 
 - **Timecode REC** no hero, a 24 fps (desligado com `prefers-reduced-motion`).
-- **Showreel**: converte links do YouTube/Vimeo em `iframe` embed, ou cria `<video>` para arquivos.
+- **Showreel**: capa = `img.player__cover` no HTML (miniatura do YouTube); converte links do YouTube/Vimeo em `iframe` embed, ou cria `<video>` para arquivos.
 - **Máscara de telefone** no campo WhatsApp: `(00) 00000-0000`.
 - **Formulário**: sem backend. Monta uma mensagem e abre `wa.me/<número>?text=...`;
   sem número configurado, cai para `mailto:`. Para receber num backend
@@ -75,7 +75,7 @@ Os mesmos valores também estão escritos no HTML como fallback sem JavaScript.
 
 ## Pendências de conteúdo
 
-- Link e duração do showreel.
+- Duração do showreel.
 - Os 6 cards de **Trabalhos** ainda usam `[Cliente] — [Projeto]` e gradientes no lugar dos frames.
   Para cada card, troque título, categoria e `href`, e opcionalmente coloque
   `<img src="..." alt="..." loading="lazy">` dentro de `.work__frame`.

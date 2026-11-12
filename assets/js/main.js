@@ -1,12 +1,12 @@
 /* ===================== CONFIGURAÇÃO — edite aqui ===================== */
 const CONFIG = {
   cidade:        "Estreito/MA",
-  duracao:       "[Duração]",
+  duracao:       "",                      // ex.: "01:30" (vazio = não aparece)
   whatsapp:      "5599991540347",         // só números, com DDI+DDD
   whatsappTexto: "(99) 99154-0347",     // como o número aparece na página
   email:         "kevenbranlim@hotmail.com",
   instagram:     "branlimm",        // sem o @
-  showreel:      "",                      // link do YouTube, Vimeo ou arquivo .mp4
+  showreel:      "https://youtu.be/AU0lhWTPHEs",  // link do YouTube, Vimeo ou arquivo .mp4
   corDestaque:   "#1450C8"                // #1450C8 · #4A9BE8 · #070B1F
 };
 /* ===================================================================== */
@@ -19,6 +19,7 @@ const CONFIG = {
 
   // Links de contato
   const real = v => v && !v.startsWith('[');
+  if (real(CONFIG.duracao)) $('.meta__dur').hidden = false;
   if (CONFIG.whatsapp) $('#lnk-whats').href = 'https://wa.me/' + CONFIG.whatsapp;
   if (real(CONFIG.email)) $('#lnk-email').href = 'mailto:' + CONFIG.email;
   if (real(CONFIG.instagram)) $('#lnk-insta').href = 'https://instagram.com/' + CONFIG.instagram;

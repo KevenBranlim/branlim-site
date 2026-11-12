@@ -25,7 +25,8 @@ Contexto para o Claude retomar o trabalho neste repositório sem precisar do his
   WhatsApp `5599991540347` / (99) 99154-0347, Instagram `branlimm`. O e-mail público está no `CONFIG`.
 - O formulário não tem backend: abre o WhatsApp com a mensagem "Olá, Branlim! Quero um orçamento." e os dados preenchidos.
 - A logo é o SVG vetorizado do PNG enviado pelo cliente (BRANLIM FILMS ™, horizontal, sombra cinza no "A").
-- **Pendente:** link e duração do showreel (`CONFIG.showreel` e o texto `[Duração]`). O cliente também pode querer domínio próprio (registro.br).
+- Showreel: YouTube `AU0lhWTPHEs` (`CONFIG.showreel`), capa `maxresdefault.jpg` em `.player__cover` no `index.html`.
+- **Pendente:** duração do showreel (`CONFIG.duracao`, vazio = escondida). O cliente também pode querer domínio próprio (registro.br).
 
 ### Trabalhos (6 cards, todos reais)
 

@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=2026111001">
+<link rel="stylesheet" href="assets/css/style.css?v=2026111201">
 </head>
 <body>
 
@@ -57,9 +57,10 @@
   <div class="wrap">
     <div class="sec-head">
       <h2 id="t-showreel" class="h2">Showreel</h2>
-      <span class="meta mono"><span data-cfg="duracao">[Duração]</span> · 4K · 16:9</span>
+      <span class="meta mono"><span class="meta__dur" hidden><span data-cfg="duracao"></span> · </span>4K · 16:9</span>
     </div>
     <div class="player" id="player">
+      <img class="player__cover" src="https://i.ytimg.com/vi/AU0lhWTPHEs/maxresdefault.jpg" alt="" loading="lazy" decoding="async">
       <span class="corner corner--tl" aria-hidden="true"></span>
       <span class="corner corner--tr" aria-hidden="true"></span>
       <span class="corner corner--bl" aria-hidden="true"></span>
@@ -220,6 +221,6 @@
   <div class="lightbox__frame" id="lightbox-frame"></div>
 </dialog>
 
-<script src="assets/js/main.js?v=2026111001" defer></script>
+<script src="assets/js/main.js?v=2026111201" defer></script>
 </body>
 </html>
