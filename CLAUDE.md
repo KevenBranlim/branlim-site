@@ -13,7 +13,9 @@ Contexto para o Claude retomar o trabalho neste repositório sem precisar do his
 ## O site
 
 - No ar em: **https://kevenbranlim.github.io/branlim-site/** (GitHub Pages, branch `main`, raiz).
-- Link curto: o cliente **abandonou o bit.ly/branlim** (o plano grátis do Bitly mostra uma página do Bitly antes do site). Ainda não há link curto novo; use o link do GitHub.
+- Link curto oficial: **https://branlim.s.gy/site** (testado em 12/11/2026: vai direto ao site no PC e no celular).
+  Descartados: bit.ly/branlim (página do Bitly no meio) e shre.ink/branlim (no celular mostra página com anúncio e botão "Ir para o site").
+  Para testar um encurtador, use Playwright com `devices['iPhone 13']` num contexto novo e espere ~10 s: o curl não mostra essas páginas.
 - É um site estático, sem build: `index.html` + `assets/css/style.css` + `assets/js/main.js` + `assets/img/logo.svg` (e `logo.png`).
 - `README.md` é a documentação técnica para programadores. Mantenha atualizado quando a estrutura mudar.
 - Seções: hero (slogan), Showreel, Serviços ("O que eu filmo"), Trabalhos, Processo, Contato, Rodapé.
