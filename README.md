@@ -75,7 +75,4 @@ Os mesmos valores também estão escritos no HTML como fallback sem JavaScript.
 
 ## Pendências de conteúdo
 
-- Duração do showreel.
-- Os 6 cards de **Trabalhos** ainda usam `[Cliente] — [Projeto]` e gradientes no lugar dos frames.
-  Para cada card, troque título, categoria e `href`, e opcionalmente coloque
-  `<img src="..." alt="..." loading="lazy">` dentro de `.work__frame`.
+- Nenhuma. Opcional: domínio próprio (registro.br) no lugar de `kevenbranlim.github.io/branlim-site`.

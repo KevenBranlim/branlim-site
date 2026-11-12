@@ -27,7 +27,8 @@ Contexto para o Claude retomar o trabalho neste repositório sem precisar do his
 - O formulário não tem backend: abre o WhatsApp com a mensagem "Olá, Branlim! Quero um orçamento." e os dados preenchidos.
 - A logo é o SVG vetorizado do PNG enviado pelo cliente (BRANLIM FILMS ™, horizontal, sombra cinza no "A").
 - Showreel: YouTube `AU0lhWTPHEs` (`CONFIG.showreel`), capa `maxresdefault.jpg` em `.player__cover` no `index.html`.
-- **Pendente:** duração do showreel (`CONFIG.duracao`, vazio = escondida). O cliente também pode querer domínio próprio (registro.br).
+- Duração do showreel: `CONFIG.duracao = "00:41"` (vazio = escondida).
+- **Pendente:** o cliente pode querer domínio próprio no futuro (registro.br; branlimfilms.com.br e branlim.com.br estavam livres em 12/11/2026).
 
 ### Trabalhos (6 cards, todos reais)
 

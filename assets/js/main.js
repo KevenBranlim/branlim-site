@@ -1,7 +1,7 @@
 /* ===================== CONFIGURAÇÃO — edite aqui ===================== */
 const CONFIG = {
   cidade:        "Estreito/MA",
-  duracao:       "",                      // ex.: "01:30" (vazio = não aparece)
+  duracao:       "00:41",                 // ex.: "01:30" (vazio = não aparece)
   whatsapp:      "5599991540347",         // só números, com DDI+DDD
   whatsappTexto: "(99) 99154-0347",     // como o número aparece na página
   email:         "kevenbranlim@hotmail.com",
