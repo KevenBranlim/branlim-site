@@ -13,6 +13,7 @@ Contexto para o Claude retomar o trabalho neste repositório sem precisar do his
 ## O site
 
 - No ar em: **https://kevenbranlim.github.io/branlim-site/** (GitHub Pages, branch `main`, raiz).
+- Link curto do cliente: **https://bit.ly/branlim** (criado por ele no Bitly, redireciona para o site). É o link que ele divulga.
 - É um site estático, sem build: `index.html` + `assets/css/style.css` + `assets/js/main.js` + `assets/img/logo.svg` (e `logo.png`).
 - `README.md` é a documentação técnica para programadores. Mantenha atualizado quando a estrutura mudar.
 - Seções: hero (slogan), Showreel, Serviços ("O que eu filmo"), Trabalhos, Processo, Contato, Rodapé.
